@@ -1,8 +1,7 @@
 UPDATE teams 
 SET abbreviation = WAS
-  WHERE abbreviation
-IS WHS;
+  WHERE abbreviation = WHS;
 
 SELECT *
 FROM teams
-WHERE league LIKE 'NL';
+WHERE league = 'NL';

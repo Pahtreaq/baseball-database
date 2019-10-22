@@ -1,5 +1,5 @@
 INSERT into teams
-    (Team, Location, Mascot, Abbreviation, League, Division)
+    (location, mascot, abbreviation, league, division)
 VALUES
     ('Pittsburgh', 'Pirates', 'PIT', 'NL', 'Central'),
     ('Texas', 'Rangers', 'TEX', 'AL', 'West'),
@@ -29,185 +29,184 @@ VALUES
     ('San Diego', 'Padres', 'SD', 'NL', 'West');
 
 INSERT into players
-    (First Name, Last Name, Position, Throws, Hits, Team Abbreviation
-  
-)
-('Chris', 'Archer', 'SP', 'R', 'R',
-(SELECT id
-FROM teams
-WHERE abbreviation = 'PIT')
+    (firstName, lastName, position, throws, hits, teamId)
+VALUES
+    ('Chris', 'Archer', 'SP', 'R', 'R',
+        (SELECT id
+        FROM teams
+        WHERE abbreviation = 'PIT')
 ),
-('Josh', 'Bell', '1B', 'R', 'B',
-(SELECT id
-FROM teams
-WHERE abbreviation = 'PIT')
+    ('Josh', 'Bell', '1B', 'R', 'B',
+        (SELECT id
+        FROM teams
+        WHERE abbreviation = 'PIT')
 ),
-('Francisco', 'Liriano', 'SP', 'L', 'L',
-(SELECT id
-FROM teams
-WHERE abbreviation = 'PIT')
+    ('Francisco', 'Liriano', 'SP', 'L', 'L',
+        (SELECT id
+        FROM teams
+        WHERE abbreviation = 'PIT')
 ),
-('Starling', 'Marte', 'CF', 'R', 'R',
-(SELECT id
-FROM teams
-WHERE abbreviation = 'PIT')
+    ('Starling', 'Marte', 'CF', 'R', 'R',
+        (SELECT id
+        FROM teams
+        WHERE abbreviation = 'PIT')
 ),
-('Colin', 'Moran', '3B', 'R', 'L',
-(SELECT id
-FROM teams
-WHERE abbreviation = 'PIT')
+    ('Colin', 'Moran', '3B', 'R', 'L',
+        (SELECT id
+        FROM teams
+        WHERE abbreviation = 'PIT')
 ),
-('Kevin', 'Newman', 'SS', 'R', 'R',
-(SELECT id
-FROM teams
-WHERE abbreviation = 'PIT')
+    ('Kevin', 'Newman', 'SS', 'R', 'R',
+        (SELECT id
+        FROM teams
+        WHERE abbreviation = 'PIT')
 ),
-('Gregory', 'Polanco', 'RF', 'L', 'L',
-(SELECT id
-FROM teams
-WHERE abbreviation = 'PIT')
+    ('Gregory', 'Polanco', 'RF', 'L', 'L',
+        (SELECT id
+        FROM teams
+        WHERE abbreviation = 'PIT')
 ),
-('Bryan', 'Reynolds', 'LF', 'R', 'B',
-(SELECT id
-FROM teams
-WHERE abbreviation = 'PIT')
+    ('Bryan', 'Reynolds', 'LF', 'R', 'B',
+        (SELECT id
+        FROM teams
+        WHERE abbreviation = 'PIT')
 ),
-('Jacob', 'Stallings', 'C', 'R', 'R',
-(SELECT id
-FROM teams
-WHERE abbreviation = 'PIT')
+    ('Jacob', 'Stallings', 'C', 'R', 'R',
+        (SELECT id
+        FROM teams
+        WHERE abbreviation = 'PIT')
 ),
-('Cole', 'Tucker', 'SS', 'R', 'B',
-(SELECT id
-FROM teams
-WHERE abbreviation = 'PIT')
+    ('Cole', 'Tucker', 'SS', 'R', 'B',
+        (SELECT id
+        FROM teams
+        WHERE abbreviation = 'PIT')
 ),
-('Felipe', 'Vazquez', 'RP', 'L', 'L',
-(SELECT id
-FROM teams
-WHERE abbreviation = 'PIT')
+    ('Felipe', 'Vazquez', 'RP', 'L', 'L',
+        (SELECT id
+        FROM teams
+        WHERE abbreviation = 'PIT')
 ),
-('Elvis', 'Andrus', 'SS', 'R', 'R',
-(SELECT id
-FROM teams
-WHERE abbreviation = 'TEX')
+    ('Elvis', 'Andrus', 'SS', 'R', 'R',
+        (SELECT id
+        FROM teams
+        WHERE abbreviation = 'TEX')
 ),
-('Asdrubal', 'Cabrera', '3B', 'R', 'B',
-(SELECT id
-FROM teams
-WHERE abbreviation = 'TEX')
+    ('Asdrubal', 'Cabrera', '3B', 'R', 'B',
+        (SELECT id
+        FROM teams
+        WHERE abbreviation = 'TEX')
 ),
-('Jesse', 'Chavez', 'RP', 'R', 'R',
-(SELECT id
-FROM teams
-WHERE abbreviation = 'TEX')
+    ('Jesse', 'Chavez', 'RP', 'R', 'R',
+        (SELECT id
+        FROM teams
+        WHERE abbreviation = 'TEX')
 ),
-('Delino', 'DeShields', 'LF', 'R', 'R',
-(SELECT id
-FROM teams
-WHERE abbreviation = 'TEX')
+    ('Delino', 'DeShields', 'LF', 'R', 'R',
+        (SELECT id
+        FROM teams
+        WHERE abbreviation = 'TEX')
 ),
-('Ronald', 'Guzman', '1B', 'L', 'L',
-(SELECT id
-FROM teams
-WHERE abbreviation = 'TEX')
+    ('Ronald', 'Guzman', '1B', 'L', 'L',
+        (SELECT id
+        FROM teams
+        WHERE abbreviation = 'TEX')
 ),
-('Ariel', 'Jurado', 'RP', 'R', 'R',
-(SELECT id
-FROM teams
-WHERE abbreviation = 'TEX')
+    ('Ariel', 'Jurado', 'RP', 'R', 'R',
+        (SELECT id
+        FROM teams
+        WHERE abbreviation = 'TEX')
 ),
-('Shawn', 'Kelley', 'RP', 'R', 'R',
-(SELECT id
-FROM teams
-WHERE abbreviation = 'TEX')
+    ('Shawn', 'Kelley', 'RP', 'R', 'R',
+        (SELECT id
+        FROM teams
+        WHERE abbreviation = 'TEX')
 ),
-('Isiah', 'Kiner-Falefa', 'C', 'R', 'R',
-(SELECT id
-FROM teams
-WHERE abbreviation = 'TEX')
+    ('Isiah', 'Kiner-Falefa', 'C', 'R', 'R',
+        (SELECT id
+        FROM teams
+        WHERE abbreviation = 'TEX')
 ),
-('Chris', 'Martin', 'RP', 'R', 'R',
-(SELECT id
-FROM teams
-WHERE abbreviation = 'TEX')
+    ('Chris', 'Martin', 'RP', 'R', 'R',
+        (SELECT id
+        FROM teams
+        WHERE abbreviation = 'TEX')
 ),
-('Nomar', 'Mazara', 'RF', 'L', 'L',
-(SELECT id
-FROM teams
-WHERE abbreviation = 'TEX')
+    ('Nomar', 'Mazara', 'RF', 'L', 'L',
+        (SELECT id
+        FROM teams
+        WHERE abbreviation = 'TEX')
 ),
-('Rougned', 'Odor', '2B', 'R', 'L',
-(SELECT id
-FROM teams
-WHERE abbreviation = 'TEX')
+    ('Rougned', 'Odor', '2B', 'R', 'L',
+        (SELECT id
+        FROM teams
+        WHERE abbreviation = 'TEX')
 ),
-('Hunter', 'Pence', 'RF', 'R', 'R',
-(SELECT id
-FROM teams
-WHERE abbreviation = 'TEX')
+    ('Hunter', 'Pence', 'RF', 'R', 'R',
+        (SELECT id
+        FROM teams
+        WHERE abbreviation = 'TEX')
 ),
-('Danny', 'Santana', 'CF', 'R', 'B',
-(SELECT id
-FROM teams
-WHERE abbreviation = 'TEX')
+    ('Danny', 'Santana', 'CF', 'R', 'B',
+        (SELECT id
+        FROM teams
+        WHERE abbreviation = 'TEX')
 ),
-('Scott', 'Barlow', 'RP', 'R', 'R',
-(SELECT id
-FROM teams
-WHERE abbreviation = 'KC')
+    ('Scott', 'Barlow', 'RP', 'R', 'R',
+        (SELECT id
+        FROM teams
+        WHERE abbreviation = 'KC')
 ),
-('Cheslor', 'Cuthbert', '3B', 'R', 'R',
-(SELECT id
-FROM teams
-WHERE abbreviation = 'KC')
+    ('Cheslor', 'Cuthbert', '3B', 'R', 'R',
+        (SELECT id
+        FROM teams
+        WHERE abbreviation = 'KC')
 ),
-('Danny', 'Duffy', 'SP', 'L', 'L',
-(SELECT id
-FROM teams
-WHERE abbreviation = 'KC')
+    ('Danny', 'Duffy', 'SP', 'L', 'L',
+        (SELECT id
+        FROM teams
+        WHERE abbreviation = 'KC')
 ),
-('Brian', 'Flynn', 'RP', 'L', 'L',
-(SELECT id
-FROM teams
-WHERE abbreviation = 'KC')
+    ('Brian', 'Flynn', 'RP', 'L', 'L',
+        (SELECT id
+        FROM teams
+        WHERE abbreviation = 'KC')
 ),
-('Cam', 'Gallagher', 'C', 'R', 'R',
-(SELECT id
-FROM teams
-WHERE abbreviation = 'KC')
+    ('Cam', 'Gallagher', 'C', 'R', 'R',
+        (SELECT id
+        FROM teams
+        WHERE abbreviation = 'KC')
 ),
-('Alex', 'Gordon', 'LF', 'R', 'L',
-(SELECT id
-FROM teams
-WHERE abbreviation = 'KC')
+    ('Alex', 'Gordon', 'LF', 'R', 'L',
+        (SELECT id
+        FROM teams
+        WHERE abbreviation = 'KC')
 ),
-('Billy', 'Hamilton', 'CF', 'R', 'B',
-(SELECT id
-FROM teams
-WHERE abbreviation = 'KC')
+    ('Billy', 'Hamilton', 'CF', 'R', 'B',
+        (SELECT id
+        FROM teams
+        WHERE abbreviation = 'KC')
 ),
-('Nicky', 'Lopez', '2B', 'R', 'L',
-(SELECT id
-FROM teams
-WHERE abbreviation = 'KC')
+    ('Nicky', 'Lopez', '2B', 'R', 'L',
+        (SELECT id
+        FROM teams
+        WHERE abbreviation = 'KC')
 ),
-('Kevin', 'McCarthy', 'RP', 'R', 'R',
-(SELECT id
-FROM teams
-WHERE abbreviation = 'KC')
+    ('Kevin', 'McCarthy', 'RP', 'R', 'R',
+        (SELECT id
+        FROM teams
+        WHERE abbreviation = 'KC')
 ),
-('Whit', 'Merrifield', '2B', 'R', 'R',
-(SELECT id
-FROM teams
-WHERE abbreviation = 'KC')
+    ('Whit', 'Merrifield', '2B', 'R', 'R',
+        (SELECT id
+        FROM teams
+        WHERE abbreviation = 'KC')
 ),
-('Adalberto', 'Mondesi', '2B', 'R', 'B',
-(SELECT id
-FROM teams
-WHERE abbreviation = 'KC')
+    ('Adalberto', 'Mondesi', '2B', 'R', 'B',
+        (SELECT id
+        FROM teams
+        WHERE abbreviation = 'KC')
 ),
-('Ryan', 'O'Hearn', '1B', 'L', 'L', (SELECT id FROM teams WHERE abbreviation = 'KC')),
+    ('Ryan', 'OHearn', '1B', 'L', 'L', (SELECT id FROM teams WHERE abbreviation = 'KC')),
 ('Jorge', 'Soler', 'RF', 'R', 'R', (SELECT id FROM teams WHERE abbreviation = 'KC')),
 ('Nolan', 'Arenado', '3B', 'R', 'R', (SELECT id FROM teams WHERE abbreviation = 'COL')),
 ('David', 'Dahl', 'LF', 'R', 'L', (SELECT id FROM teams WHERE abbreviation = 'COL')),
@@ -260,21 +259,9 @@ WHERE abbreviation = 'KC')
 ('Christian', 'Arroyo', '3B', 'R', 'R', (SELECT id FROM teams WHERE abbreviation = 'TB')),
 ('Jalen', 'Beeks', 'RP', 'L', 'L', (SELECT id FROM teams WHERE abbreviation = 'TB')),
 ('Diego', 'Castillo', 'RP', 'R', 'R', (SELECT id FROM teams WHERE abbreviation = 'TB')),
-('Travis', 'd'Arnaud', 'C', 'R', 'R',
-(SELECT id
-FROM teams
-WHERE abbreviation = 'TB')
-),
-('Yandy', 'Diaz', '3B', 'R', 'R',
-(SELECT id
-FROM teams
-WHERE abbreviation = 'TB')
-),
-('Avisail', 'Garcia', 'RF', 'R', 'R',
-(SELECT id
-FROM teams
-WHERE abbreviation = 'TB')
-),
+('Travis', 'dArnaud', 'C', 'R', 'R', (SELECT id FROM teams WHERE abbreviation = 'TB')),
+('Yandy', 'Diaz', '3B', 'R', 'R', (SELECT id FROM teams WHERE abbreviation = 'TB')),
+('Avisail', 'Garcia', 'RF', 'R', 'R', (SELECT id FROM teams WHERE abbreviation = 'TB')),
 ('Kevin', 'Kiermaier', 'CF', 'R', 'L',
 (SELECT id
 FROM teams
@@ -1460,4 +1447,3 @@ WHERE abbreviation = 'SD')
 FROM teams
 WHERE abbreviation = 'SD')
 );
-
